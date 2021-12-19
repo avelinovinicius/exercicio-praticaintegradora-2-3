@@ -16,7 +16,7 @@ public class Program {
 
 		Product[] vect = new Product[n];
 
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < vect.length; i++) {
 			sc.nextLine();
 			System.out.println("Produto: ");
 			String name = sc.nextLine();
@@ -33,7 +33,7 @@ public class Program {
 
 		// Calculo e exibicao do Array
 		double sum = 0.0;
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < vect.length; i++) {
 			sum += vect[i].getPrice() * vect[i].getQuantity();
 
 			System.out.println("Produto " + (i + 1) + "\n" + vect[i].getName() + "\n" + "R$ " + vect[i].getPrice()
